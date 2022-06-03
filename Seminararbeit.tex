@@ -9,16 +9,68 @@
 \clearpage
 \pagenumbering{arabic}
 
-\section{Einleitung}
-\label{sec:Einleitung}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. \cite[993]{Konak2006} \cite[1--5]{Sailer2013}
-% Beim letzten Zitat die Seitenangabe "1--5" nicht durch "1 \psqq" ersetzen, da hierdurch die genaue Eingrenzung des Quellennachweises verloren geht.
+\section{Introduction}
+\label{sec:Introduction}
+Intent-Driven Networking (IDN) is a promising network concept that has received great attention from industry and open source communities in recent years. Conventional networks are configured manually with specific execution commands. Instead, Intent-Driven Network is provided with desired business intent and does not require any exact configuration. This concept has the potential to automate the network management process by providing simple and powerful tools to handle resources, infrastructure, and services\cite{Mwanje2021}. However, there is no unified and clear definition of Intent-Driven Networking. The enabling techniques and frameworks of IDN are still in the further exploration phase\cite{8968429}.
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. \cite[995 \psq]{Konak2006}
+\section{Basics}
+\label{sec:Basics}
 
-\section{Hauptteil}
-\label{sec:Hauptteil}
+\subsection{Mobile Networks}
+TODO: 5G and 6G Mobile Networks
 
+\subsection{Software Defined Networking (SDN) / Network Functions Virtualization (NFV)}
+
+
+\section{Intent-Driven Networking}
+\label{sec:Intent_Driven_Networking}
+The next section presents the formal definitions of Intent and Intent-Driven Networking. 
+
+\subsection{Definition of Intent-Driven Networking}
+Though different research institutions have proposed various definitions of intent and Intent-Driven Networking, all presented interpretations closely resemble each other. 
+
+The intent can be described as a declarative way to define the desired state of the system that can be translated into an advanced policy. It abstracts the components and capabilities of the network from a requirements perspective. The intent does not define any specific commands on how to reach the resulting state. Instead, it only specifies the desired goal of the network\cite{Mwanje2021}. It means that the network should be able to understand the intent and map it into a specific device-level configurations.  The system automatically observes its current state and adjusts itself to achieve the desired outcome if there are any deviations. \cite[22867]{8968429}
+
+Intent-Driven Networking (IDN) is a technology concept that tends to automate network administrative tasks by applying a deeper level of intelligence and intended state \cite{Kolibri}\cite{2022}. Intent-based networking captures, translates, and applies business intent across the network. The network is able to automatically deploy, configure, verify and optimize itself to achieve a target state defined by intent. The network performs continuous monitoring and adjustment to ensure alignment, which is achieved through a closed-loop system. Eventually, IDN provides full-lifecycle management for the network.\cite{8968429}
+
+Intent-Driven Networking management provides four main functionalities: 
+
+\begin{enumerate}
+	\item Translation and verification. The IDN captures and translates business intent into the necessary system configuration, which is then automatically applied across the network. The system then validates the correctness of the resulting policy.
+	\item Automatic deployment. The IDN installs translated and verified policies across physical and virtual network infrastructure through network automation and network orchestration.
+	\item Network state awareness. The state of the network may constantly change, which can lead to some inconsistencies between implementation and the desired outcome. The system needs to continuously monitor and manage the network to guarantee fulfillment of the business intent at any point in time.
+	\item Accurate diagnosis and dynamic optimization. The ultimate goal is for the network to continuously monitor and adjust network performance to ensure the desired business outcome. If expected intent is not achieved, the system takes corrective actions. \cite[271]{Wei2020}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+\subsection{Intent-Driven System Architecture}
+
+\subsection{Closed-loop System}
+
+\subsection{Intent Fulfilment}
+
+\subsection{Advantages of Intent-Driven Networking}
+
+\subsection{Challenges of Intent-Driven Networking}
+
+\subsection{Industrial Products}
+
+\section{Conclusion}
+\label{sec:Conclusion}
+
+
+
+
+
+\section{TODO: Delete}
+\label{sec:Delete}
 Abbildungen können z.\,B. im Unterverzeichnis \texttt{figures} abgelegt werden.
 Eingebunden werden diese mit dem Befehl \texttt{\textbackslash includegraphics} innerhalb
 einer \texttt{figure}-Umgebung:
@@ -69,11 +121,6 @@ In \Cref{lst:factorial} finden Sie eine rekursive Funktion zur Fakultätsberechn
   
 \subsection{Zweite Zwischenüberschrift}
 \label{sec:ZweiteZwischenueberschrift}
-
-TEXT
-
-\section{Schluss}
-\label{sec:Schluss}
 
 TEXT
 
