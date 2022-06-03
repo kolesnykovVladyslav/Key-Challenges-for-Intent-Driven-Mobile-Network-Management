@@ -1,0 +1,59 @@
+@Article{Wei2020,
+  author       = {Yiming Wei and Mugen Peng and Yaqiong Liu},
+  date         = {2020},
+  journaltitle = {Digital Communications and Networks},
+  title        = {Intent-based networks for 6G: Insights and challenges},
+  doi          = {https://doi.org/10.1016/j.dcan.2020.07.001},
+  issn         = {2352-8648},
+  number       = {3},
+  pages        = {270-280},
+  url          = {https://www.sciencedirect.com/science/article/pii/S2352864820302418},
+  volume       = {6},
+  abstract     = {Intent-Based Networks (IBNs), which are originally proposed to introduce Artificial Intelligence (AI) into the sixth-generation (6G) wireless networks, can effectively solve the challenges of traditional networks in terms of efficiency, flexibility, and security. IBNs are mainly used to transform users’ business intent into network configuration, operation, and maintenance strategies, which are prominent for designing the AI-enabled 6G networks. In particular, in order to meet the massive, intelligent service demands and overcome the time-varying radio propagation, IBNs can continuously learn and adapt to the time-varying network environment based on the massive collected network data in real-time. From the aspects of both the core network and radio access network, this article comprehensively surveys the architectures and key techniques of IBNs for 6G. In particular, the demonstration platforms of IBNs, such as the Apstra Operating System, Forward Networks Verification Platform, and One Convergence Service Interaction Platform, are presented. Moreover, the industrial development of IBNs is elaborated, including the emerging new products and startups to solve the problems of open data platforms, automated network operations, and preemptive network fault diagnosis. Finally, several open issues and challenges are identified as well to spur future researches.},
+  keywords     = {Intent-based networks (IBNs), The sixth-generation wireless networks (6G), Artificial intelligence (AI)},
+}
+
+@Online{Kolibri,
+  title   = {What is intent-based networking (IBN)?},
+  url     = {https://www.vmware.com/topics/glossary/content/intent-based-networking.html},
+  urldate = {2022-05-11},
+  year    = {2022},
+}
+
+@Article{anuradha2017empowering,
+  author    = {Anuradha, CB and Sharma, Puneet},
+  title     = {Empowering the future 5G networks: an AI based approach},
+  number    = {1},
+  pages     = {53},
+  volume    = {10},
+  journal   = {Telecom Business Review},
+  publisher = {Publishing India Group},
+  year      = {2017},
+}
+
+@Article{Mwanje2021,
+  author = {Stephen S Mwanje and Anubhab Banerjee and Juergen Goerge and Abdelrahman Abdelkader and Gabor Hannak and Peter Szilagyi and Tejas Subramanya and Julian Goser and Tobias Foth},
+  title  = {{Intent-Driven Network and Service Management: Definitions, Modeling and Implementation}},
+  date   = {2021-12},
+  doi    = {10.36227/techrxiv.17075450.v1},
+  url    = {https://www.techrxiv.org/articles/preprint/Intent-Driven_Network_and_Service_Management_Definitions_Modeling_and_Implementation/17075450},
+}
+
+@Article{8968429,
+  author  = {Pang, Lei and Yang, Chungang and Chen, Danyang and Song, Yanbo and Guizani, Mohsen},
+  title   = {A Survey on Intent-Driven Networks},
+  doi     = {10.1109/ACCESS.2020.2969208},
+  pages   = {22862-22873},
+  volume  = {8},
+  journal = {IEEE Access},
+  year    = {2020},
+}
+
+@Online{2022,
+  date    = {2022},
+  title   = {Intent-based networking (IBN)},
+  url     = {https://www.techtarget.com/whatis/definition/intent-based-networking-IBN},
+  urldate = {2022-05-31},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
