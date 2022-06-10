@@ -47,7 +47,7 @@ IDN management provides four main functionalities\cite[271]{Wei2020}:
 
 Different research groups have various concepts and design solutions for the IDN architecture. The survey \cite[13]{Mehmood2021} presents a very detailed IDN architecture for networks, which contains four following layers: application layer, intent layer, network management and orchestration layer, and resource layer. It gives a comprehensive overview of the functions and features of each layer with its key enabling technologies.
 
-Fig. n illustrates a more simple and general architecture for IDMs presented in \cite[3]{Saha2018} that was inspired by the Open Platform for Network Function Virtualization (OPNFV) project. Its core elements are discussed below.  
+Figure \ref{fig:IBN_Architecture} illustrates a more simple and general architecture for IDMs presented in \cite[3]{Saha2018} that was inspired by the Open Platform for Network Function Virtualization (OPNFV) project. Its core elements are discussed below.  
 
 \begin{figure}[htb]
   \centering
@@ -60,7 +60,7 @@ Fig. n illustrates a more simple and general architecture for IDMs presented in 
 
 \textbf{Optimization Decision Maker (ODM)} is responsible for intent verification optimization and decision making. After receiving as input a mid-level representation of intent, ODM tries to find a feasible and the most optimal solution that is then returned to IP. Based on AI- and ML techniques, the AI Engine (AIE) of ODM learns from past intents to make better decisions in terms of feasibility and intent installation. In addition, this module may be trained on rewards and penalties provided by IP.
 
-\textbf{{}Data Store (DS)} may store all relevant data collected from the network in a centralized or distributed manner. It provides an API so that other components can store and retrieve data from the DS. Additionally, DS may have a Graph Builder (GB) module that provides a graph view of the underlying network. The graph model can be utilized for optimization, decision making, generating analytics, and network visualization.
+\textbf{Data Store (DS)} may store all relevant data collected from the network in a centralized or distributed manner. It provides an API so that other components can store and retrieve data from the DS. Additionally, DS may have a Graph Builder (GB) module that provides a graph view of the underlying network. The graph model can be utilized for optimization, decision making, generating analytics, and network visualization.
 
 \textbf{State Observer (SO)} is a crucial component for intent assurance because it is responsible for monitoring the network. Based on data retrieved from DS it observes the current state and informs IP if there is any threat or inconsistency against installed intent. For instance, a node can be overloaded with network traffic leading to failure in serving a critical service. In this case, the SO identifies the threat and informs the Intent Processor.
 
