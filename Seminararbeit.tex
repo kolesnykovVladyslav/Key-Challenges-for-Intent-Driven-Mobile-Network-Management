@@ -29,7 +29,7 @@ The next section presents the formal definitions of Intent and IDN.
 \subsection{Definition of Intent-Driven Networking}
 Though different research institutions have proposed various definitions of intent and IDN, all presented interpretations closely resemble each other. 
 
-The intent can be described as a declarative way to define the desired state of the system that can be translated into an advanced policy. It abstracts the components and capabilities of the network from a requirements perspective. The intent does not define any specific commands on how to reach the resulting state. Instead, it only specifies the desired goal of the network\cite{Mwanje2021}. It means that the network should be able to understand the intent and map it into a specific device-level configurations.  The system automatically observes its current state and adjusts itself to achieve the desired outcome if there are any deviations. \cite[22867]{8968429}
+The intent can be described as a declarative way to define the desired state of the system that can be translated into an advanced policy. It abstracts the components and capabilities of the network from a requirements perspective. The intent does not define any specific commands on how to reach the resulting state. Instead, it only specifies the desired outcome of the network. For example, a cell should have a range of 1 km with a data rate of 100 Mbit/s.\cite{Mwanje2021} It means that the network should be able to understand the intent and map it into a specific device-level configurations.  The system automatically observes its current state and adjusts itself to achieve the desired outcome if there are any deviations. \cite[22867]{8968429}
 
 Intent-Driven Networking is a technology concept that tends to automate network administrative tasks by applying a deeper level of intelligence and intended state. IDN captures, translates, and applies business intent across the network. The network is able to automatically deploy, configure, verify and optimize itself to achieve a target state defined by intent. The network performs continuous monitoring and adjustment to ensure alignment, which is achieved through a closed-loop system. Eventually, IDN provides full-lifecycle management for the network.\cite{8968429}
 
@@ -43,14 +43,37 @@ IDN management provides four main functionalities\cite[271]{Wei2020}:
 \end{enumerate}
 
 
-
-
-
-
-
-
-
 \subsection{Intent-Driven System Architecture}
+
+Different research groups have various concepts and design solutions for the IDN architecture. The survey \cite[13]{Mehmood2021} presents a very detailed IDN architecture for networks, which contains four following layers: application layer, intent layer, network management and orchestration layer, and resource layer. It gives a comprehensive overview of the functions and features of each layer with its key enabling technologies.
+
+Fig. n illustrates a more simple and general architecture for IDMs presented in \cite[3]{Saha2018} that was inspired by the Open Platform for Network Function Virtualization (OPNFV) project. Its core elements are discussed below.  
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/IBN_Architecture.png}
+  \caption{Basic Architecture of IDN}
+  \label{fig:IBN_Architecture}
+\end{figure}
+
+\textbf{Intent Processor (IP)} is the core component of IDN architecture that accepts high-level intent provided by users or various applications through a corresponding interface. Intents can be given in different formats, such as simple text, executable commands via a Command-Line Interface (CLI), interaction with a graphical user interface (GUI), or audio interface as speech. After new intent is provided, the translater module performs mapping into a machine-readable representation for the required modules or services. For instance, IP can translate plain text into some internal representation (e.g. Yet Another Next Generation (YANG) as a possible modeling language) with the help of various Natural Language Processing (NLP) technologies\cite[15]{Mehmood2021}. The IP is also responsible for intent assurance. Based on the information from State Observer, IP takes corrective action and assists in the reconfiguration of the underlying infrastructure to preserve the required intents.
+
+\textbf{Optimization Decision Maker (ODM)} is responsible for intent verification optimization and decision making. After receiving as input a mid-level representation of intent, ODM tries to find a feasible and the most optimal solution that is then returned to IP. Based on AI- and ML techniques, the AI Engine (AIE) of ODM learns from past intents to make better decisions in terms of feasibility and intent installation. In addition, this module may be trained on rewards and penalties provided by IP.
+
+\textbf{{}Data Store (DS)} may store all relevant data collected from the network in a centralized or distributed manner. It provides an API so that other components can store and retrieve data from the DS. Additionally, DS may have a Graph Builder (GB) module that provides a graph view of the underlying network. The graph model can be utilized for optimization, decision making, generating analytics, and network visualization.
+
+\textbf{State Observer (SO)} is a crucial component for intent assurance because it is responsible for monitoring the network. Based on data retrieved from DS it observes the current state and informs IP if there is any threat or inconsistency against installed intent. For instance, a node can be overloaded with network traffic leading to failure in serving a critical service. In this case, the SO identifies the threat and informs the Intent Processor.
+
+The following modules, such as \textbf{Visualizer} and \textbf{Analytics Engine (AE)} are optional components of IDN but still provide some useful functionality. The Visualizer displays information about the state and performance of the network at a glance using a graphical user interface (GUI). It ensures total visibility of the entire network by providing graphical representations of network devices, network metrics, and data flows. Analytics Engine is used to process queries related to network performance, based on raw monitoring data and graph model. Third-party applications may access AE using its API to perform network monitoring.
+
+In IDN, \textbf{applications} are transparent to the underlying system and only interact via appropriate Application Programming Interfaces (APIs) or so-called Northbound Interface (NBI). These APIs play a crucial role as they hide the underlying system's complexities.
+
+The underlying resource layer provides the physical network infrastructure with various device entities. It contains multiple controllers like \textbf{Network (NC)}, \textbf{Storage (SC)}, and \textbf{Computation Controller (CC)} that configure the network devices, such as routers, switches, disks, and servers, according to a required intent. The NC can be an SDN controller or network management system in a traditional network. The \textbf{Infrastructure Manager (IM)} represents an interface between the IP and the different controllers. IM translates feasible intents into domain-specific instructions and also collects various statistics from the controllers.
+
+
+
+
+
 
 \subsection{Closed-loop System}
 

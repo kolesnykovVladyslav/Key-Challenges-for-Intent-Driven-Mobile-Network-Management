@@ -56,4 +56,38 @@
   urldate = {2022-05-31},
 }
 
+@Misc{Mehmood2021,
+  author    = {Mehmood, Kashif and Kralevska, Katina and Palma, David},
+  title     = {Intent-driven Autonomous Network and Service Management in Future Networks: A Structured Literature Review},
+  doi       = {10.48550/ARXIV.2108.04560},
+  url       = {https://arxiv.org/abs/2108.04560},
+  copyright = {Creative Commons Attribution 4.0 International},
+  keywords  = {Networking and Internet Architecture (cs.NI), FOS: Computer and information sciences},
+  publisher = {arXiv},
+  year      = {2021},
+}
+
+@Article{Kiran2018,
+  author       = {Mariam Kiran and Eric Pouyoul and Anu Mercian and Brian Tierney and Chin Guok and Inder Monga},
+  date         = {2018},
+  journaltitle = {Future Generation Computer Systems},
+  title        = {Enabling intent to configure scientific networks for high performance demands},
+  doi          = {https://doi.org/10.1016/j.future.2017.04.020},
+  issn         = {0167-739X},
+  note         = {INDIRA},
+  pages        = {205-214},
+  url          = {https://www.sciencedirect.com/science/article/pii/S0167739X1730626X},
+  volume       = {79},
+  abstract     = {Globally distributed scientific experiments involve movement of massive data volumes and many collaborators performing distributed data analysis. With complex workloads and heterogeneous resources, each user may desire certain behavior characteristics for their network paths. In this paper, we present the iNDIRA tool, which interacts with SDN north-bound interfaces to enable intent-based networking. It provides reliable, simple, and technology-agnostic communication between users and networks. Focusing particularly on science applications, iNDIRA uses natural language processing to construct semantic RDF graphs to understand, interact, and create the required network services. The technical challenges addressed by iNDIRA are: (1) development of a high-level descriptive language to query network-application requirements, (2) provides keyword identification and condition checking based on user profiles and topology details, (3) allows user negotiation based on the current network state, and (4) integrates network provisioning and service tools used by the application. iNDIRA is implemented on the ESnet network, where it interacts with OpenNSA (aka the NSI client) and Globus data transfer tools, to build complex cross-domain network paths for heterogeneous science applications, and perform secure data transfer. We argue that iNDIRA’s approach presents users with an alternative approach to interact and communicate their network demands, allowing seamless network service integration.},
+  keywords     = {Intent-based networking, Natural language processing, Ontology engineering, SDN north-bound interface},
+}
+
+@InProceedings{Saha2018,
+  author = {Saha, Barun and Tandur, Deepaknath and Haab, Luca and Podleski, Lukasz},
+  date   = {2018-10},
+  title  = {Intent-based Networks: An Industrial Perspective},
+  doi    = {10.1145/3243318.3243324},
+  pages  = {35-40},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
