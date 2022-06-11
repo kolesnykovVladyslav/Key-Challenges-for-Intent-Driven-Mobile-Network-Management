@@ -90,4 +90,10 @@
   pages  = {35-40},
 }
 
+@Article{MartinezJulia2021,
+  author = {Martinez-Julia, P and Nobre, J and Lopez, D},
+  date   = {2022},
+  title  = {Intent Classification},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
