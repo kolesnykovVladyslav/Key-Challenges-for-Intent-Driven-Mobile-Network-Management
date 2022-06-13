@@ -1,7 +1,7 @@
 \input{preamble}
 
 \begin{document}
-\pagenumbering{roman} 
+\pagenumbering{roman}	
 \include{titlepage}
 
 \tableofcontents
@@ -36,23 +36,21 @@ Intent-Driven Networking is a technology concept that tends to automate network 
 IDN management provides four main functionalities\cite[271]{Wei2020}: 
 
 \begin{enumerate}
-  \item Translation and verification. The IDN captures and translates business intent into the necessary system configuration, which is then automatically applied across the network. The system then validates the correctness of the resulting policy.
-  \item Automatic deployment. The IDN installs translated and verified policies across physical and virtual network infrastructure through network automation and network orchestration.
-  \item Network state awareness. The state of the network may constantly change, which can lead to some inconsistencies between implementation and the desired outcome. The system needs to continuously monitor and manage the network to guarantee fulfillment of the business intent at any point in time.
-  \item Accurate diagnosis and dynamic optimization. The ultimate goal is for the network to continuously monitor and adjust network performance to ensure the desired business outcome. If expected intent is not achieved, the system takes corrective actions.
+	\item Translation and verification. The IDN captures and translates business intent into the necessary system configuration, which is then automatically applied across the network. The system then validates the correctness of the resulting policy.
+	\item Automatic deployment. The IDN installs translated and verified policies across physical and virtual network infrastructure through network automation and network orchestration.
+	\item Network state awareness. The state of the network may constantly change, which can lead to some inconsistencies between implementation and the desired outcome. The system needs to continuously monitor and manage the network to guarantee fulfillment of the business intent at any point in time.
+	\item Accurate diagnosis and dynamic optimization. The ultimate goal is for the network to continuously monitor and adjust network performance to ensure the desired business outcome. If expected intent is not achieved, the system takes corrective actions.
 \end{enumerate}
 
 
 \subsection{Intent-Driven System Architecture}
 
-Different research groups have various concepts and design solutions for the IDN architecture. The survey \cite[13]{Mehmood2021} presents a very detailed IDN architecture for networks, which contains four following layers: application layer, intent layer, network management and orchestration layer, and resource layer. It gives a comprehensive overview of the functions and features of each layer with its key enabling technologies.
-
-Figure \ref{fig:IBN_Architecture} illustrates a more simple and general architecture for IDMs presented in \cite[3]{Saha2018} that was inspired by the Open Platform for Network Function Virtualization (OPNFV) project. Its core elements are discussed below.  
+Different research groups have various concepts and design solutions for the IDN architecture. Figure \ref{fig:IBN_Architecture} illustrates a generalized architecture for IDNs presented in \cite[3]{Saha2018} that was inspired by the Open Platform for Network Function Virtualization (OPNFV) project. Its core elements are discussed below.  
 
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.8\textwidth]{figures/IBN_Architecture.png}
-  \caption{Basic Architecture of IDN}
+  \caption{Basic Architecture of IDN\cite{Saha2018}}
   \label{fig:IBN_Architecture}
 \end{figure}
 
@@ -70,6 +68,7 @@ In IDN, \textbf{applications} are transparent to the underlying system and only 
 
 The underlying resource layer provides the physical network infrastructure with various device entities. It contains multiple controllers like \textbf{Network (NC)}, \textbf{Storage (SC)}, and \textbf{Computation Controller (CC)} that configure the network devices, such as routers, switches, disks, and servers, according to a required intent. The NC can be an SDN controller or network management system in a traditional network. The \textbf{Infrastructure Manager (IM)} represents an interface between the IP and the different controllers. IM translates feasible intents into domain-specific instructions and also collects various statistics from the controllers.
 
+In comparison, the authors in \cite[13]{Mehmood2021} present another IDN architecture, which is more detailed and contains four following layers: application, intent, network management and orchestration, and resource layers. This survey gives a comprehensive overview of the functions and features of each layer with its key enabling technologies.
 
 
 \subsection{Closed-loop System}
