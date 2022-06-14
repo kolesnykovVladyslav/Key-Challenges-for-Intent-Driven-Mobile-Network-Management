@@ -1,0 +1,111 @@
+@Article{Wei2020,
+  author       = {Yiming Wei and Mugen Peng and Yaqiong Liu},
+  date         = {2020},
+  journaltitle = {Digital Communications and Networks},
+  title        = {Intent-based networks for 6G: Insights and challenges},
+  doi          = {https://doi.org/10.1016/j.dcan.2020.07.001},
+  issn         = {2352-8648},
+  number       = {3},
+  pages        = {270-280},
+  url          = {https://www.sciencedirect.com/science/article/pii/S2352864820302418},
+  volume       = {6},
+  abstract     = {Intent-Based Networks (IBNs), which are originally proposed to introduce Artificial Intelligence (AI) into the sixth-generation (6G) wireless networks, can effectively solve the challenges of traditional networks in terms of efficiency, flexibility, and security. IBNs are mainly used to transform users’ business intent into network configuration, operation, and maintenance strategies, which are prominent for designing the AI-enabled 6G networks. In particular, in order to meet the massive, intelligent service demands and overcome the time-varying radio propagation, IBNs can continuously learn and adapt to the time-varying network environment based on the massive collected network data in real-time. From the aspects of both the core network and radio access network, this article comprehensively surveys the architectures and key techniques of IBNs for 6G. In particular, the demonstration platforms of IBNs, such as the Apstra Operating System, Forward Networks Verification Platform, and One Convergence Service Interaction Platform, are presented. Moreover, the industrial development of IBNs is elaborated, including the emerging new products and startups to solve the problems of open data platforms, automated network operations, and preemptive network fault diagnosis. Finally, several open issues and challenges are identified as well to spur future researches.},
+  keywords     = {Intent-based networks (IBNs), The sixth-generation wireless networks (6G), Artificial intelligence (AI)},
+}
+
+@Online{Kolibri,
+  title   = {What is intent-based networking (IBN)?},
+  url     = {https://www.vmware.com/topics/glossary/content/intent-based-networking.html},
+  urldate = {2022-05-11},
+  year    = {2022},
+}
+
+@Article{anuradha2017empowering,
+  author    = {Anuradha, CB and Sharma, Puneet},
+  title     = {Empowering the future 5G networks: an AI based approach},
+  number    = {1},
+  pages     = {53},
+  volume    = {10},
+  journal   = {Telecom Business Review},
+  publisher = {Publishing India Group},
+  year      = {2017},
+}
+
+@Article{Mwanje2021,
+  author = {Stephen S Mwanje and Anubhab Banerjee and Juergen Goerge and Abdelrahman Abdelkader and Gabor Hannak and Peter Szilagyi and Tejas Subramanya and Julian Goser and Tobias Foth},
+  title  = {{Intent-Driven Network and Service Management: Definitions, Modeling and Implementation}},
+  date   = {2021-12},
+  doi    = {10.36227/techrxiv.17075450.v1},
+  url    = {https://www.techrxiv.org/articles/preprint/Intent-Driven_Network_and_Service_Management_Definitions_Modeling_and_Implementation/17075450},
+}
+
+@Article{8968429,
+  author  = {Pang, Lei and Yang, Chungang and Chen, Danyang and Song, Yanbo and Guizani, Mohsen},
+  title   = {A Survey on Intent-Driven Networks},
+  doi     = {10.1109/ACCESS.2020.2969208},
+  pages   = {22862-22873},
+  volume  = {8},
+  journal = {IEEE Access},
+  year    = {2020},
+}
+
+@Online{2022,
+  date    = {2022},
+  title   = {Intent-based networking (IBN)},
+  url     = {https://www.techtarget.com/whatis/definition/intent-based-networking-IBN},
+  urldate = {2022-05-31},
+}
+
+@Misc{Mehmood2021,
+  author    = {Mehmood, Kashif and Kralevska, Katina and Palma, David},
+  title     = {Intent-driven Autonomous Network and Service Management in Future Networks: A Structured Literature Review},
+  doi       = {10.48550/ARXIV.2108.04560},
+  url       = {https://arxiv.org/abs/2108.04560},
+  copyright = {Creative Commons Attribution 4.0 International},
+  keywords  = {Networking and Internet Architecture (cs.NI), FOS: Computer and information sciences},
+  publisher = {arXiv},
+  year      = {2021},
+}
+
+@Article{Kiran2018,
+  author       = {Mariam Kiran and Eric Pouyoul and Anu Mercian and Brian Tierney and Chin Guok and Inder Monga},
+  date         = {2018},
+  journaltitle = {Future Generation Computer Systems},
+  title        = {Enabling intent to configure scientific networks for high performance demands},
+  doi          = {https://doi.org/10.1016/j.future.2017.04.020},
+  issn         = {0167-739X},
+  note         = {INDIRA},
+  pages        = {205-214},
+  url          = {https://www.sciencedirect.com/science/article/pii/S0167739X1730626X},
+  volume       = {79},
+  abstract     = {Globally distributed scientific experiments involve movement of massive data volumes and many collaborators performing distributed data analysis. With complex workloads and heterogeneous resources, each user may desire certain behavior characteristics for their network paths. In this paper, we present the iNDIRA tool, which interacts with SDN north-bound interfaces to enable intent-based networking. It provides reliable, simple, and technology-agnostic communication between users and networks. Focusing particularly on science applications, iNDIRA uses natural language processing to construct semantic RDF graphs to understand, interact, and create the required network services. The technical challenges addressed by iNDIRA are: (1) development of a high-level descriptive language to query network-application requirements, (2) provides keyword identification and condition checking based on user profiles and topology details, (3) allows user negotiation based on the current network state, and (4) integrates network provisioning and service tools used by the application. iNDIRA is implemented on the ESnet network, where it interacts with OpenNSA (aka the NSI client) and Globus data transfer tools, to build complex cross-domain network paths for heterogeneous science applications, and perform secure data transfer. We argue that iNDIRA’s approach presents users with an alternative approach to interact and communicate their network demands, allowing seamless network service integration.},
+  keywords     = {Intent-based networking, Natural language processing, Ontology engineering, SDN north-bound interface},
+}
+
+@InProceedings{Saha2018,
+  author = {Saha, Barun and Tandur, Deepaknath and Haab, Luca and Podleski, Lukasz},
+  date   = {2018-10},
+  title  = {Intent-based Networks: An Industrial Perspective},
+  doi    = {10.1145/3243318.3243324},
+  pages  = {35-40},
+}
+
+@Article{MartinezJulia2022,
+  author = {Martinez-Julia, P and Nobre, J and Lopez, D},
+  date   = {2022},
+  title  = {Intent Classification},
+}
+
+@InProceedings{Jacobs2018,
+  author    = {Jacobs, Arthur Selle and Pfitscher, Ricardo Jos\'{e} and Ferreira, Ronaldo Alves and Granville, Lisandro Zambenedetti},
+  booktitle = {Proceedings of the Afternoon Workshop on Self-Driving Networks},
+  date      = {2018},
+  title     = {Refining Network Intents for Self-Driving Networks},
+  doi       = {10.1145/3229584.3229590},
+  isbn      = {9781450359146},
+  location  = {Budapest, Hungary},
+  pages     = {15–21},
+  publisher = {Association for Computing Machinery},
+  series    = {SelfDN 2018},
+  url       = {https://doi.org/10.1145/3229584.3229590},
+  abstract  = {Recent advances in artificial intelligence (AI) offer an opportunity for the adoption of self-driving networks. However, network operators or home-network users still do not have the right tools to exploit these new advancements in AI, since they have to rely on low-level languages to specify network policies. Intent-based networking (IBN) allows operators to specify high-level policies that dictate how the network should behave without worrying how they are translated into configuration commands in the network devices. However, the existing research proposals for IBN fail to exploit the knowledge and feedback of the network operator to validate or improve the translation of intents. In this paper, we introduce a novel intent-refinement process that uses machine learning and feedback from the operator to translate the operator's utterance
