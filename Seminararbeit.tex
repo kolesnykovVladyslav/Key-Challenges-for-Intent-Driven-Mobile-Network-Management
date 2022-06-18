@@ -37,7 +37,16 @@ Intent-Driven Networking (IDN) is a promising network concept that has received 
 \subsection{Mobile Networks}
 TODO: 5G and 6G Mobile Networks
 
-\subsection{Software Defined Networking (SDN) / Network Functions Virtualization (NFV)}
+
+\subsection{Software-Defined Networking and Network Function Virtualization}
+
+Virtualization and softwarisation enable high-level abstraction of network management functions. These concepts are key enablers of IDN.
+
+\textbf{Software-Defined Networking (SDN)} is a concept that enables a dynamic and programmatically efficient network configuration in order to improve network performance and flexibility. The data plane, which is a layer where devices are interconnected through wireless radio channels or wired cables, is decoupled from the control plane and managed by a centralized controller\cite{Li2015}. The SDN controller logically maintains the dynamic network, takes requests from the application layer, and manages the network devices via standard protocols. Simply put, the network is programmable through software applications running on top of the SDN controller that interacts with the underlying devices. It allows operators to manage the network and services from a centralized user interface. In \cite{Amani2014}, SDN was also proposed for the mobile networks to efficiently accommodate the explosive data traffic over the LTE or Wi-Fi accesses, considering the real-time network condition.
+
+\textbf{Network Function Virtualization (NFV)} is a complementary technology to the SDN, which can provide the infrastructure on which SDN can run. Network virtualization is an approach that decouples the network functions from their supported hardware and allows them to be implemented as software. NFV makes it possible to programmatically create, provision, and manage networks in software while using the underlying physical network. Virtualization decouples network services, such as routers, firewalls, and load balances, from the specific hardware and allows virtual provisioning of an entire network. The combination of SDN and NFV can address the challenges of dynamic resource management and intelligent service orchestration.\cite{Li2015}
+
+IDN takes traditional networking management one step further. It builds upon SDN and NFV technologies enabling a higher level of intelligence and automation in networks. IDN allows configuring a network to address the desired business goal by specifying just what the resulting state of the system shall be instead of how the system has to reach it.
 
 
 \section{Intent-Driven Networking}
