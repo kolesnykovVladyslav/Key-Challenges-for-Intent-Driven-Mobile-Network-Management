@@ -129,7 +129,6 @@ However, intent translation is not limited to this implementation. The same pape
 
 \subsection{Closed-loop System}
 
-\subsection{Intent Fulfilment}
 
 \subsection{Industrial Products}
 
@@ -153,19 +152,19 @@ Intent-Driven Networking has clear advantages over regular networking. Most of t
 
 
 
-\subsection{Challenges of Intent-Driven Networking}
+\section{Challenges of Intent-Driven Networking}
 
 IDN improves the automation of networks and abstracts complex problems, but it also faces some challenges. This section covers several issues that require further research.
 
-\subsubsection{Intent description and translation}
+\subsection{Intent description and translation}
 In IDNs, it is expected for the intents to be human-readable at the application level and more machine understandable as the intent flows through the whole system towards the resource layer. The machine-readable format as a mid-level representation is required for efficient intent processing and implementation. However, a human-readable format is preferable for users since arbitrary complex goals can be expressed in a high-level and flexible way. The translation of abstract intents into concrete network configurations is one of the biggest challenge and design goals in IDN systems.
 
 Several different approaches have been proposed for intent representation, such as ontology-based, unrestricted language, vocabulary-restricted, and other hybrid methods. The intent translation is aided by various Natural Language Processing (NLP) technologies. The capabilities of these approaches are still limited compared to naturally spoken language. The intent representation and translation problems still have to be explored to provide scalable solutions for human-readable intent description models.\cite[18]{Mehmood2021} 
 
-\subsubsection{Lack of standardization}
+\subsection{Lack of standardization}
 Different research groups, open-source communities, and industrial companies independently explore and develop IDN solutions. Existing IDN frameworks are based on heterogeneous architectures and underlying techniques that present different functional characteristics. Each component and architectural layer heavily relies on API, and the current unified standard has not been formed. Thus, the absence of a standardized format for specifying intents and common architecture is one of the main challenges of IDN.\cite{8968429}
 
-\subsubsection{Application of Artificial Intelligence}
+\subsection{Application of Artificial Intelligence}
 The increasing complexity of the mobile networks requires IDNs to be able to translate users' business intents and other requirements into the network configuration, operation, and maintenance policies, and perform the self-configuration, self-optimization, and self-healing of the network. These tasks can be accomplished by AI technologies to ensure network performance while reducing operational costs and improving network robustness. Thus, mobile networks would greatly benefit from advances in the domains of Artificial Intelligence and Machine Learning.\cite{Wei2020}
 
 They are some potential areas that require the integration of AI in the IDN framework:
@@ -184,7 +183,20 @@ Network monitoring could be challenging in new generation mobile networks due to
 
 The research on the integration of IDNs and AI approaches into mobile networks has just started in recent years. The current studies focus mostly on the core networks, and intent-driven mobile networks need further exploration before IDN makes a breakthrough in wireless communication technology, achieving a novel standard in mobile networks.
 
-\subsubsection{Legacy networks}
+\subsection{Intent fulfillment and conflict resolution}
+
+From the operator’s perspective, there can be a huge variety of intents. For instance, simple intents that can be fulfilled with a single command on a specific network object or very complex intents that include several commands on multiple network nodes.
+
+The survey \cite{Mwanje2021} presents two methods for fulfilling user-specified intents. The first approach is based on Intent Logic Units (ILU), which may be considered as a wrapper around command sequences or logic that need to be executed to achieve a specific goal. ILUs are stored in an Intent Logic Library (ILL). Intent-Logic Execution Platform (ILEP) retrieves appropriate ILU from the ILL library and schedules its execution. The second method uses Intent-Driven Network Automation Function Orchestrator, which identifies if the intent is valid and executable by Cognitive Automation Network (CAN). Both methods allow the fulfillment of intents but need to be extended in the future to support more features.
+
+To ensure the correct fulfillment of provided intent, IDN should perform its syntactical and semantical validation. Valid intents should still be checked for technical feasibility, in order to avoid conflicts that might occur due to inconsistency, missing network functionalities, or conflicts with existing intents. Infeasible intents should be rejected and the system has to provide an operator with appropriate feedback. Thus, it is necessary to monitor, collect and store network state data and capabilities to perform feasibility checking.
+
+IDN is expected to be provided multiple active intents that should be handled at the same time in an efficient way, leading to various control actions utilizing a shared set of resources. The possibility of conflicts among active intents is unavoidable and requires intent coordination and conflict determination, prevention, and resolution. In order to solve conflicts in network control and management, simple forms of coordination, such as prioritization, partial fulfillment, or queuing were proposed. There are also abstract approaches that use the tools of formal languages and first-order logic to handle conflicts. In addition, the dynamic environment of mobile networks, like the changing number of users and traffic demand, makes this task even more complicated.\cite{Mwanje2021}
+
+Therefore, the detection and resolution of intent conflicts is a major challenge in IDN and needs further research.
+
+
+\subsection{Legacy networks}
 Industries and enterprises tend to move away from legacy network technologies as more efficient solutions become available and the nature of consumer demand changes. However, the legacy network equipment and systems are still often in use. The aspect of migrating them to IDN architecture has to be considered.\cite{Saha2018}
 
 
@@ -245,11 +257,7 @@ print "Done"
 \end{lstlisting}
 
 In \Cref{lst:factorial} finden Sie eine rekursive Funktion zur Fakultätsberechnung.
-  
-\subsection{Zweite Zwischenüberschrift}
-\label{sec:ZweiteZwischenueberschrift}
 
-TEXT
 
 % Literaturverzeichnis
 \printbibliography[heading=bibintoc]
