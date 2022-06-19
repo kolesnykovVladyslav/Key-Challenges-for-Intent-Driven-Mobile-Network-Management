@@ -56,10 +56,10 @@ IDN takes traditional networking management one step further. It builds upon SDN
 
 \section{Intent-Driven Networking}
 \label{sec:Intent_Driven_Networking}
-The next section presents the formal definitions of Intent and IDN. 
+This section presents the formal definition of IDN, followed by generic architecture and intent translation process that uses machine learning techniques. Furthermore, it briefly surveys the current research status of IDN and lists advantages over regular networking. 
 
 \subsection{Definition of Intent-Driven Networking}
-Though different research institutions have proposed various definitions of intent and IDN, all presented interpretations closely resemble each other. 
+In order to define the term IDN, it is essential to understand what intent is. Though there is no standard term intent, all definitions presented by various research institutions are pretty similar.
 
 The intent can be described as a declarative way to define the desired state of the system that can be translated into an advanced policy. It abstracts the components and capabilities of the network from a requirements perspective. The intent does not define any specific commands on how to reach the resulting state. Instead, it only specifies the desired outcome of the network. For example, a cell should have a range of 1 km with a data rate of 100 Mbit/s.\cite{Mwanje2021} It means that the network should be able to understand the intent and map it into a specific device-level configurations.  The system automatically observes its current state and adjusts itself to achieve the desired outcome if there are any deviations. \cite[22867]{8968429}
 
@@ -81,7 +81,7 @@ Different research groups have various concepts and design solutions for the IDN
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=0.8\textwidth]{figures/IBN_Architecture.png}
+  \includegraphics[width=0.7\textwidth]{figures/IBN_Architecture.png}
   \caption{Basic Architecture of IDN\cite{Saha2018}}
   \label{fig:IDN_Architecture}
 \end{figure}
