@@ -29,7 +29,12 @@
 
 \section{Introduction}
 \label{sec:Introduction}
-Intent-Driven Networking (IDN) is a promising network concept that has received great attention from industry and open source communities in recent years. Conventional networks are configured manually with specific execution commands. Instead, the network is provided with desired business intent and does not require any exact configuration. This concept has the potential to automate the network management process by providing simple and powerful tools to handle resources, infrastructure, and services\cite{Mwanje2021}. However, there is no unified and clear definition of Intent-Driven Networking. The enabling techniques and frameworks of IDN are still in the further exploration phase\cite{8968429}.
+
+The new customer-facing services, such as intelligent transport systems, smart cities, online gaming, and AR/VR create new challenges for the 5th Generation (5G) mobile networks. These include services with various quality of service (QoS) requirements, such as enhanced mobile broadband, ultra-reliable low-latency communications, and massive machine-type communications. However, the next-generation mobile networks (6G) will face even more QoS requirements such as less than 1-millisecond end-to-end latency, 1 Tb/sec throughput,  massive machine-type communication, supporting a wide range of connected devices, and enabling real-time, highly reliable communication. These challenges can only be addressed with the extensive adoption of network automation capabilities that minimize the need for human intervention. 
+
+Thus, future mobile networks should be self-configuring, self-managing, and self-optimizing. Intent-Driven Networking (IDN) is a promising network concept that has received great attention from industry and open source communities in recent years. Instead of performing manual network management, the network is provided with desired business intent that is used to express all requirements to be automatically fulfilled by a system. IDN has the potential to automate the network management process by providing simple and powerful tools to handle resources, infrastructure, and services\cite{Mwanje2021}. However, the enabling techniques and frameworks of IDN are still in the further exploration phase.
+
+The rest of this paper is organized as follows. Section 2 presents a short overview of mobile networks and enabling technologies for applying intelligence in networks. Section 3 introduces the definition and general architecture of IDN. In addition, the development of IDN and its main advantages are briefly covered. The main challenges that require further research are discussed in Section 4, followed by a conclusion in Section 5.
 
 \section{Basics}
 \label{sec:Basics}
@@ -127,9 +132,6 @@ Finally, having a structured intermediate intent representation verified by the 
 However, intent translation is not limited to this implementation. The same paper \cite[20]{Jacobs2018} also briefly covers other existing intent languages, frameworks, and compilers, discussing their goals and shortcomings.
 	
 
-\subsection{Closed-loop System}
-
-
 \subsection{Industrial Products}
 
 
@@ -204,43 +206,9 @@ Therefore, the detection and resolution of intent conflicts is a major challenge
 Industries and enterprises tend to move away from legacy network technologies as more efficient solutions become available and the nature of consumer demand changes. However, the legacy network equipment and systems are still often in use. The aspect of migrating them to IDN architecture has to be considered.\cite{Saha2018}
 
 
-
 \section{Conclusion}
 \label{sec:Conclusion}
 
-
-
-
-
-\section{TODO: Delete}
-\label{sec:Delete}
-Abbildungen können z.\,B. im Unterverzeichnis \texttt{figures} abgelegt werden.
-Eingebunden werden diese mit dem Befehl \texttt{\textbackslash includegraphics} innerhalb
-einer \texttt{figure}-Umgebung:
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=0.8\textwidth]{figures/Hummingbird.jpg}
-  \caption{Eine Veilchenkopfelfe (auch Costakolibri genannt, vom lateinischen Calypte costae), die zur Familie der Kolibris gehört }
-  \label{fig:kolibri}
-\end{figure}
-
-\subsection{Erste Zwischenüberschrift}
-\label{sec:ErsteZwischenueberschrift}
-Die Arbeit kann auch Tabellen im \texttt{table}-Environment enthalten:
-\begin{table}[ht]
-  \centering
-  \caption{Entfernungstabelle Süddeutschland, vgl. \cite{entfernungstabelle}}
-  \begin{tabular}{c r r r}
-    \toprule
-              & Augsburg & München & Stuttgart \\
-    \midrule
-    Augsburg  & -        & 61      & 149       \\
-    München   & 61       & -       & 210       \\
-    Stuttgart & 149      & 210     & -         \\
-    \bottomrule
-  \end{tabular}
-  \label{tab:entfernungen}
-\end{table}
 
 
 % Literaturverzeichnis
