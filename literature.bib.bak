@@ -133,4 +133,27 @@
   publisher    = {IEEE},
 }
 
+@InProceedings{Amani2014,
+  author    = {Amani, Mojdeh and Mahmoodi, Toktam and Tatipamula, Mallikarjun and Aghvami, Hamid},
+  booktitle = {2014 IEEE International Conference on Communications (ICC)},
+  date      = {2014},
+  title     = {Programmable policies for data offloading in LTE network},
+  doi       = {10.1109/ICC.2014.6883806},
+  pages     = {3154-3159},
+}
+
+@Article{Docomo2020,
+  author       = {Docomo, NTT},
+  date         = {2020},
+  journaltitle = {Whitepaper, January},
+  title        = {5G Evolution and 6G},
+}
+
+@Article{Han2021,
+  author       = {Han, Bin and Jiang, Wei and Habibi, Mohammad Asif and Schotten, Hans D},
+  date         = {2021},
+  journaltitle = {arXiv preprint arXiv:2101.01062},
+  title        = {An abstracted survey on 6g: Drivers, requirements, efforts, and enablers},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
