@@ -156,4 +156,15 @@
   title        = {An abstracted survey on 6g: Drivers, requirements, efforts, and enablers},
 }
 
+@Article{Demestichas2013,
+  author       = {Demestichas, Panagiotis and Georgakopoulos, Andreas and Karvounas, Dimitrios and Tsagkaris, Kostas and Stavroulaki, Vera and Lu, Jianmin and Xiong, Chunshan and Yao, Jing},
+  date         = {2013},
+  journaltitle = {IEEE vehicular technology magazine},
+  title        = {5G on the horizon: Key challenges for the radio-access network},
+  number       = {3},
+  pages        = {47--53},
+  volume       = {8},
+  publisher    = {IEEE},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
