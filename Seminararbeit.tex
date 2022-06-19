@@ -156,11 +156,6 @@ Intent-Driven Networking has clear advantages over regular networking. Most of t
 
 IDN improves the automation of networks and abstracts complex problems, but it also faces some challenges. This section covers several issues that require further research.
 
-\subsection{Intent description and translation}
-In IDNs, it is expected for the intents to be human-readable at the application level and more machine understandable as the intent flows through the whole system towards the resource layer. The machine-readable format as a mid-level representation is required for efficient intent processing and implementation. However, a human-readable format is preferable for users since arbitrary complex goals can be expressed in a high-level and flexible way. The translation of abstract intents into concrete network configurations is one of the biggest challenge and design goals in IDN systems.
-
-Several different approaches have been proposed for intent representation, such as ontology-based, unrestricted language, vocabulary-restricted, and other hybrid methods. The intent translation is aided by various Natural Language Processing (NLP) technologies. The capabilities of these approaches are still limited compared to naturally spoken language. The intent representation and translation problems still have to be explored to provide scalable solutions for human-readable intent description models.\cite[18]{Mehmood2021} 
-
 \subsection{Lack of standardization}
 Different research groups, open-source communities, and industrial companies independently explore and develop IDN solutions. Existing IDN frameworks are based on heterogeneous architectures and underlying techniques that present different functional characteristics. Each component and architectural layer heavily relies on API, and the current unified standard has not been formed. Thus, the absence of a standardized format for specifying intents and common architecture is one of the main challenges of IDN.\cite{8968429}
 
@@ -171,17 +166,26 @@ They are some potential areas that require the integration of AI in the IDN fram
 \begin{itemize}
 \item[--] Intent translation.
 \item[--] Intent and service assurance with proactive monitoring of resources and network environment.
+\item[--] Network planning and configuration.
 \item[--] Optimization of the network and service orchestration.
-\item[--] Intent-to-service mappings.
 \item[--] Troubleshooting and resolution.
 \item[--] Security assurance.
 \end{itemize}
 
-For instance, NLP technologies can be used for understanding the intent structure and its translation through Sequence-to-Sequence (seq2seq) learning models such as recurrent neural networks (RNN, Long-Short-Term Memory (LSTM), Gated Recurrent Unit (GRU)) and advanced models including attention, Bidirectional Encoder Representations from Transformers (BERT). The context and declarative parameter retrieval leading to the appropriate network configuration can be achieved through a Convolutional Neural Network (CNN).\cite{Mehmood2021}
+Cellular network planning is a challenging process that involves resolving a high number of complex issues, such as uncertainty of input parameters, lack of accurate network details, and complexity of the network. Standard network planning is an iterative process based on approximation techniques with fixed pre-defined inputs. AI techniques like Simulated Annealing, Tabu Search, and Genetic Algorithms can be used to solve complex network design problems, by making more accurate predictions.\cite{anuradha2017empowering}
+
+The self-organizing features including self-configuration, self-optimization, and self-healing play a critical role in the automation of complex networks. For example, a typical 5G node could have thousands of configuration parameters. AI techniques like Transfer Learning, Reinforcement Learning, and Dynamic Programming may be utilized to address configuration management with a highly automated approach.\cite{anuradha2017empowering}
 
 Network monitoring could be challenging in new generation mobile networks due to the dynamic and heterogeneous nature of the cellular environment. With AI-powered diagnostic analytics, the network can quickly and accurately detect problems and resolve them, even before they occur. Based on data from various sources, algorithms like Logistic Regression (LR), Support Vector Machine (SVM), and Hidden Markov Model (HMM) could be utilized for network anomaly detection.\cite{anuradha2017empowering}
 
 The research on the integration of IDNs and AI approaches into mobile networks has just started in recent years. The current studies focus mostly on the core networks, and intent-driven mobile networks need further exploration before IDN makes a breakthrough in wireless communication technology, achieving a novel standard in mobile networks.
+
+
+\subsection{Intent description and translation}
+In IDNs, it is expected for the intents to be human-readable at the application level and more machine understandable as the intent flows through the whole system towards the resource layer. The machine-readable format as a mid-level representation is required for efficient intent processing and implementation. However, a human-readable format is preferable for users since arbitrary complex goals can be expressed in a high-level and flexible way. The translation of abstract intents into concrete network configurations is one of the biggest challenge and design goals in IDN systems.
+
+Several different approaches have been proposed for intent representation, such as ontology-based, unrestricted language, vocabulary-restricted, and other hybrid methods. The intent translation is aided by various Natural Language Processing (NLP) technologies. For instance, NLP  can be used for understanding the intent structure and its translation through Sequence-to-Sequence (seq2seq) learning models such as recurrent neural networks (RNN, Long-Short-Term Memory (LSTM), Gated Recurrent Unit (GRU)) and advanced models including attention, Bidirectional Encoder Representations from Transformers (BERT). The context and declarative parameter retrieval leading to the appropriate network configuration can be achieved through a Convolutional Neural Network (CNN). However, the capabilities of these approaches are still limited compared to naturally spoken language. The intent representation and translation problems still have to be explored to provide scalable solutions for human-readable intent description models.\cite[18]{Mehmood2021} 
+
 
 \subsection{Intent fulfillment and conflict resolution}
 
@@ -237,26 +241,6 @@ Die Arbeit kann auch Tabellen im \texttt{table}-Environment enthalten:
   \end{tabular}
   \label{tab:entfernungen}
 \end{table}
-
-\subsubsection{Erste Unterüberschrift}
-\label{sec:ErsteUnterueberschrift}
-
-Das \texttt{listings}-Paket erlaubt es, Quellcode mit Syntax-Highlighting einzubinden:
-
-\begin{lstlisting}[language=Python,float=ht,caption={Python-Programm zur Berechnung der Fakultätsfunktion},label=lst:factorial]
-def fact(n):
-    """Return the n-th factorial number"""
-    if n == 0:
-        return 1
-    else:
-        return n * fact(n-1)
-  
-# Test output
-print fact(10)
-print "Done"
-\end{lstlisting}
-
-In \Cref{lst:factorial} finden Sie eine rekursive Funktion zur Fakultätsberechnung.
 
 
 % Literaturverzeichnis
