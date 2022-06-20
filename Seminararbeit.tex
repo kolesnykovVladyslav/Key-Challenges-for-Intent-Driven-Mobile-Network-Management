@@ -103,18 +103,15 @@ The paper \cite{Jacobs2018} introduces an intent-refinement process that uses ma
 
 The intent is collected through a chat interface, and a neural network learning model is used to extract entities from natural language. Examples of such entities are the network endpoints, middleboxes, and temporal configurations for the policy. A previously trained sequence-to-sequence learning model based on a Recurrent Neural Network (RNN) with Long Short-Term Memory is used to translate extracted entities to structured intents written in the Nile language. 
 
-Using the Nile language, the operator can build powerful yet simple intents. For example, an input \textit{"Add firewall and intrusion detection from gateway to backend for client B, with latency less than 10ms and 100mbps of bandwidth, and allow HTTPS only, every day from 09:00 to 18:00"} can be represented as in \Cref{lst:nile_intent_example}. The extracted Nile intent acts as an abstraction layer for lower-level configuration and policy languages. Authors claim the Nile's grammar is expressive enough to represent most network intents.
-
+Using the Nile language, the operator can build powerful yet simple intents. For example, an input \textit{"Every day from 09:00 to 18:00, the cell should have a range of 1 km with a data rate of 100 Mbit/s, latency under 10 milliseconds and frequency band 2000 MHz"} can be represented as in \Cref{lst:nile_intent_example}. The extracted Nile intent acts as an abstraction layer for lower-level configuration and policy languages. Authors claim the Nile's grammar is expressive enough to represent most network intents.
 
 \begin{lstlisting}[language=Nile,float=ht,caption={Nile intent example\cite{Jacobs2018}},label=lst:nile_intent_example]
 define intent qosIntent:
-  from    endpoint("gateway")
-  to      endpoint ("database")
-  for     client("B")
-  add     middlebox("firewall"), middlebox("ids")
-  with    latency("less", "10s"),
+  from    endpoint("cell")
+  with    range("equal", "1000m"),
           throughput("more or equal", "100mbps")
-  allow   traffic ("https")
+          latency("less", "10ms"),
+          frequency("equal", "2000MHz")
   start   hour("09:00")
   end     hour("18:00")
 \end{lstlisting}
