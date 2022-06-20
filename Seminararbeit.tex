@@ -19,7 +19,7 @@
 
 
 \begin{document}
-\pagenumbering{roman} 
+\pagenumbering{roman}	
 \include{titlepage}
 
 \tableofcontents
@@ -34,7 +34,7 @@ New customer-facing services, such as intelligent transport systems, smart citie
 
 Thus, future mobile networks should be self-configuring, self-managing, and self-optimizing. Intent-Driven Networking (IDN) is a promising network concept that has received great attention from industry and open source communities in recent years. Instead of performing manual network management, the network is provided with desired business intent that is used to express all requirements to be automatically fulfilled by a system. IDN has the potential to automate the network management process by providing simple and powerful tools to handle resources, infrastructure, and services\cite{Mwanje2021}. However, the enabling techniques and frameworks of IDN are still in the further exploration phase.
 
-The rest of this paper is organized as follows. Section 2 presents a short overview of mobile networks and enabling technologies for applying intelligence in networks. Section 3 introduces the definition and general architecture of IDN. In addition, the development of IDN and its main advantages are briefly covered. The main challenges that require further research are discussed in Section 4, followed by a conclusion in Section 5.
+The rest of this paper is organized as follows. Section 2 presents a short overview of mobile networks and enabling technologies for applying intelligence in networks. Section 3 introduces the definition of IDN, followed by generic architecture and intent translation process. In addition, the main advantages and IDN products are briefly covered. The main challenges of IDN that require further research are discussed in Section 4, followed by a conclusion in Section 5.
 
 \section{Overview of mobile networks}
 \label{sec:Overview_of_mobile_networks}
@@ -55,17 +55,17 @@ This section presents the formal definition of IDN, followed by generic architec
 \subsection{Definition of Intent-Driven Networking}
 In order to define the term IDN, it is essential to understand what intent is. Though there is no standard term intent, all definitions presented by various research institutions are pretty similar.
 
-The intent can be described as a declarative way to define the desired state of the system that can be translated into an advanced policy. It abstracts the components and capabilities of the network from a requirements perspective. The intent does not define any specific commands on how to reach the resulting state. Instead, it only specifies the desired outcome of the network. For example, a cell should have a range of 1 km with a data rate of 100 Mbit/s.\cite{Mwanje2021} It means that the network should be able to understand the intent and map it into a specific device-level configurations.  The system automatically observes its current state and adjusts itself to achieve the desired outcome if there are any deviations. \cite[22867]{8968429}
+The intent can be described as a declarative way to define the desired state of the system that can be translated into an advanced policy. It abstracts the components and capabilities of the network from a requirements perspective. The intent does not define any specific commands on how to reach the resulting state. Instead, it only specifies the desired outcome of the network. For example, \textit{"a cell should have a range of 1 km with a data rate of 100 Mbit/s."} It means that the network should be able to understand the intent and map it into a specific device-level configurations.  The system automatically observes its current state and adjusts itself to achieve the desired outcome if there are any deviations.\cite[22867]{8968429}
 
-Intent-Driven Networking is a technology concept that tends to automate network administrative tasks by applying a deeper level of intelligence and intended state. IDN captures, translates, and applies business intent across the network. The network is able to automatically deploy, configure, verify and optimize itself to achieve a target state defined by intent. The network performs continuous monitoring and adjustment to ensure alignment, which is achieved through a closed-loop system. Eventually, IDN provides full-lifecycle management for the network.\cite{8968429}
+Intent-Driven Networking is a technology concept that tends to automate network administrative tasks by applying a deeper level of intelligence. IDN captures, translates, and applies business intent across the network. The network is able to automatically deploy, configure, verify and optimize itself to achieve a target state defined by intent. The network performs continuous monitoring and adjustment to ensure alignment, which is achieved through a closed-loop system. Eventually, IDN provides full-lifecycle management for the network.\cite{8968429}
 
-IDN management provides four main functionalities\cite[271]{Wei2020}: 
+IDN management provides four main functionalities:\cite[271]{Wei2020}
 
 \begin{enumerate}
-  \item Translation and verification. The IDN captures and translates business intent into the necessary system configuration, which is then automatically applied across the network. The system then validates the correctness of the resulting policy.
-  \item Automatic deployment. The IDN installs translated and verified policies across physical and virtual network infrastructure through network automation and network orchestration.
-  \item Network state awareness. The state of the network may constantly change, which can lead to some inconsistencies between implementation and the desired outcome. The system needs to continuously monitor and manage the network to guarantee fulfillment of the business intent at any point in time.
-  \item Accurate diagnosis and dynamic optimization. The ultimate goal is for the network to continuously monitor and adjust network performance to ensure the desired business outcome. If expected intent is not achieved, the system takes corrective actions.
+	\item Translation and verification. The IDN captures and translates business intent into the necessary system configuration, which is then automatically applied across the network. The system then validates the correctness of the resulting policy.
+	\item Automatic deployment. The IDN installs translated and verified policies across physical and virtual network infrastructure through network automation and network orchestration.
+	\item Network state awareness. The state of the network may constantly change, which can lead to some inconsistencies between implementation and the desired outcome. The system needs to continuously monitor and manage the network to guarantee fulfillment of the business intent at any point in time.
+	\item Accurate diagnosis and dynamic optimization. The ultimate goal is for the network to continuously monitor and adjust network performance to ensure the desired business outcome. If expected intent is not achieved, the system takes corrective actions.
 \end{enumerate}
 
 
@@ -124,7 +124,7 @@ The structured intent definition generated by the translation model is then pres
 Finally, having a structured intermediate intent representation verified by the user, the Intent Deployer can compile and deploy it into configuration commands using SONATA-NFV, which is an emulation platform that deploys network functions as Docker containers. Decoupling provided by intermediate intent representation ensures the reusability of the proposed solution by allowing compilation of the intents to other existing network configurations and policy languages, such as Janus, PGA, and Kinectic.
 
 However, intent translation is not limited to this implementation. The same paper \cite[20]{Jacobs2018} also briefly covers other existing intent languages, frameworks, and compilers, discussing their goals and shortcomings.
-  
+	
 
 \subsection{Industrial Products}
 
@@ -177,7 +177,7 @@ The self-organizing features including self-configuration, self-optimization, an
 
 Network monitoring could be challenging in new generation mobile networks due to the dynamic and heterogeneous nature of the cellular environment. With AI-powered diagnostic analytics, the network can quickly and accurately detect problems and resolve them, even before they occur. Based on data from various sources, algorithms like Logistic Regression (LR), Support Vector Machine (SVM), and Hidden Markov Model (HMM) could be utilized for network anomaly detection.\cite{anuradha2017empowering}
 
-The research on the integration of IDNs and AI approaches into mobile networks has just started in recent years. The current studies focus mostly on the core networks, and intent-driven mobile networks need further exploration before IDN makes a breakthrough in wireless communication technology, achieving a novel standard in mobile networks.
+The research on the integration of IDNs and AI approaches into mobile networks has just started in recent years. The current studies focus mostly on the core networks, and Intent-Driven mobile networks need further exploration before IDN makes a breakthrough in wireless communication technology, achieving a novel standard in mobile networks.
 
 
 \subsection{Intent description and translation}
