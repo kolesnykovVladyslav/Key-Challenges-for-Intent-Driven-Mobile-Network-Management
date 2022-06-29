@@ -1,0 +1,88 @@
+\documentclass[a4paper,DIV=16]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[german]{babel}
+
+\usepackage[sfdefault]{FiraSans}
+\usepackage{FiraMono}
+\usepackage{url}
+\usepackage{xcolor}
+\definecolor{smdsblue}{RGB}{0, 69, 134}
+\usepackage[color=smdsblue!25]{todonotes}
+\usepackage{local_style}
+
+\pagestyle{empty}
+
+\begin{document}
+\title{Review Seminararbeit}
+\date{SoSe 2022}
+
+%% >> Bitte entsprechend Ihres EIGENEN Seminars ausfüllen!
+%% --- 8< --- 8< --- 8< ---
+%\subtitle{\todo[inline]{Bitte die richtige Lehrveranstaltung einkommentieren}}
+%\subtitle{Seminar Automotive Software and Systems Engineering}
+%\subtitle{Seminar Medical Information Science}
+\subtitle{Seminar Software Engineering für verteilte Systeme}
+%\subtitle{Seminar Software Engineering in sicherheitskritischen Systemen}
+%% --- >8 --- >8 --- >8 ---
+
+% >> Bitte "\personal{...}" stehen lassen und nur den Inhalt "\todo[......" mit ihrem Namen ersetzen. 
+% >> Dieses Kommando wird später zur Anonymisierung genutzt. 
+\author{\personal{Vladyslav Kolesnykov (2054429)}}
+
+\maketitle
+\thispagestyle{empty}
+
+\section*{Hinweise}
+\begin{itemize}
+\item Länge des Reviews: 2--3 Seiten (inklusive dieser Hinweise)
+\item Jede Frage in diesem Template muss beantwortet werden! \textbf{Ersetzen} Sie dazu die vorhandenen \texttt{\textbackslash{}todo}-Befehle im Template durch Ihre Antworten in Fließtext oder ausführlichen Stichpunkten.
+\item Die Qualität der von Ihnen verfassten Reviews geht in Ihre Gesamtnote für das Seminar ein.
+\item Entfernen Sie nach dem vollständigen Bearbeiten des Reviews das \texttt{todonotes}-Paket im Header dieser Datei. Wenn Sie alle \texttt{\textbackslash{}todo}-Befehle ersetzt haben, kompiliert das Dokument weiterhin ohne Fehler.  \texttt{\textbackslash{}usepackage[color=smdsblue!25]{todonotes}}
+\end{itemize}
+
+\section*{Allgemeine Informationen}
+\subsection*{Titel der zu bewertenden Arbeit}
+
+Challenges and Approaches of Solving Fuzzy Constraint Satisfaction Problems
+
+
+\section*{Hauptinhalt der Arbeit}
+
+This paper presents the approaches and challenges of solving fuzzy constraint satisfaction problems. In section 2, the Constraint-Satisfaction-Problem (CSP) and Fuzzy-Constraint-Satisfaction-Problem (FCSP) were introduced with some good examples such as the n queens problem, scheduling problem, and others. Additionally, backtracking, which is one of the standard methods to solve CSP, was briefly covered. The main part discusses the four possibilities to solve an FCSP. Firstly, the branch-and-bound algorithm is an extension of backtracking that tackles the FCSP. Then, forward checking was used in combination with backtracking. In contrast to the systematic search, the GENET algorithm (GA) is a local search approach for solving FCSPs. Lastly, the Spread-Repair-Shrink algorithm was presented that is a combination of the systematic and local searches and takes advantage of both. The conclusion briefly and precisely summarizes the content of the paper and raises the question of the importance and further research perspective of solving Fuzzy Constraint Satisfaction Problems.
+
+
+\section*{Allgemeine Bewertung}
+
+\subsection*{Stärken der Arbeit}
+
+This paper is an example of a good scientific research survey that summarizes approaches and challenges of solving fuzzy constraint satisfaction problems. The CSP and FCSP were presented in the basics section, which was important for understanding the presented solving methods. The author has managed to address the research topic in an engaging and clear manner. The paper is logically organized and presented approaches are provided with examples and figures, which contribute to a better understanding. In conclusion, the author was able to precisely summarizes the content of the paper, enhancing the interest in further exploring the current topic.
+
+
+\subsection*{Schwächen der Arbeit}
+
+Potential for improvement:
+\begin{itemize}
+\item Add page numbers for citations that will make it easier to find the right paragraph in the source.
+\item Fix broken figures.
+\item Fix the 'scharfes s'. Currently 'ß' is shown as 'SS'.
+\end{itemize}  
+
+
+\section*{Sachliche Korrektheit}
+
+This paper is based on several scientific sources in domain of the constraint satisfaction. The author provides correct and meaningful citations and describes the content of the sources in his own words, providing the most relevant information. In chapter 3, the author was able to briefly summarize the approaches to solve the fuzzy constraint satisfaction problem, backed up with figures and pseudocode examples. However, the page number of the sources is not given, which makes it difficult to find the right place in the document.
+
+
+\section*{Äußere Form}
+
+\begin{itemize}
+\item The paper is written in good academic language. No comments on grammar. However, the 'scharfes s' formatting should be fixed.
+\item The paper has a proper structure. The order of the sections is logical and easy to read.
+\item The figures are well-chosen to help the reader understand the content. All of them are referenced in the text and include self-explanatory captions. However, some figures are illegible because they are not displayed correctly.
+\item The paper has a clear and well-structured appearance.
+
+\end{itemize}  
+
+\end{document}
