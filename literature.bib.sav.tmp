@@ -21,7 +21,7 @@
 }
 
 @Article{anuradha2017empowering,
-  author    = {Anuradha, CB and Sharma, Puneet},
+  author    = {Anuradha, C. B. and Sharma, Puneet},
   title     = {Empowering the future 5G networks: an AI based approach},
   number    = {1},
   pages     = {53},
@@ -32,9 +32,9 @@
 }
 
 @Article{Mwanje2021,
-  author = {Stephen S Mwanje and Anubhab Banerjee and Juergen Goerge and Abdelrahman Abdelkader and Gabor Hannak and Peter Szilagyi and Tejas Subramanya and Julian Goser and Tobias Foth},
-  title  = {{Intent-Driven Network and Service Management: Definitions, Modeling and Implementation}},
+  author = {Mwanje, Stephen S. and Banerjee, Anubhab and Goerge, Juergen and Abdelkader, Abdelrahman and Hannak, Gabor and Szilagyi, Peter and Subramanya, Tejas and Goser, Julian and Foth, Tobias},
   date   = {2021-12},
+  title  = {{Intent-Driven Network and Service Management: Definitions, Modeling and Implementation}},
   doi    = {10.36227/techrxiv.17075450.v1},
   url    = {https://www.techrxiv.org/articles/preprint/Intent-Driven_Network_and_Service_Management_Definitions_Modeling_and_Implementation/17075450},
 }
@@ -91,7 +91,7 @@
 }
 
 @Article{MartinezJulia2022,
-  author = {Martinez-Julia, P and Nobre, J and Lopez, D},
+  author = {Martinez-Julia, P. and Nobre, J. and Lopez, D.},
   date   = {2022},
   title  = {Intent Classification},
 }
@@ -108,4 +108,4 @@
   publisher = {Association for Computing Machinery},
   series    = {SelfDN 2018},
   url       = {https://doi.org/10.1145/3229584.3229590},
-  abstract  = {Recent advances in artificial intelligence (AI) offer an opportunity for the adoption of self-driving networks. However, network operators or home-network users still do not have the right tools to exploit these new advancements in AI, since they have to rely on low-level languages to specify network policies. Intent-based networking (IBN) allows operators to specify high-level policies that dictate how the network should behave without worrying how they are translated into configuration commands in the network devices. However, the existing research proposals for IBN fail to exploit the knowledge and feedback of the network operator to validate or improve the translation of intents. In this paper, we introduce a novel intent-refinement process that uses machine learning and feedback from the operator to translate the operator's utterance
+  abstract  = {Recent advances in artificial intelligence (AI) offer an opportunity for the adoption of self-driving networks. However, network operators or home-network users still do not have the right tools to exploit these new advancements in AI, since they have to rely on low-level languages to specify network policies. Intent-based networking (IBN) allows operators to specify high-level policies that dictate how the network should behave without worrying how they are translated into configuration commands in the network devices. However, the existing research proposals for IBN fail to exploit the knowledge and feedback of the network operator to validate or improve the translation of intents. In this paper, we introduce a novel intent-refinement process that uses machine learning and feedback from the operator to translate the oper
