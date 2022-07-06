@@ -150,7 +150,7 @@
 }
 
 @Article{Han2021,
-  author       = {Han, Bin and Jiang, Wei and Habibi, Mohammad Asif and Schotten, Hans D},
+  author       = {Han, Bin and Jiang, Wei and Habibi, Mohammad Asif and Schotten, Hans D.},
   date         = {2021},
   journaltitle = {arXiv preprint arXiv:2101.01062},
   title        = {An abstracted survey on 6g: Drivers, requirements, efforts, and enablers},
@@ -165,6 +165,17 @@
   pages        = {47--53},
   volume       = {8},
   publisher    = {IEEE},
+}
+
+@Article{Zhang2019,
+  author       = {Zhang, Zhengquan and Xiao, Yue and Ma, Zheng and Xiao, Ming and Ding, Zhiguo and Lei, Xianfu and Karagiannidis, George K. and Fan, Pingzhi},
+  date         = {2019},
+  journaltitle = {IEEE Vehicular Technology Magazine},
+  title        = {6G Wireless Networks: Vision, Requirements, Architecture, and Key Technologies},
+  doi          = {10.1109/MVT.2019.2921208},
+  number       = {3},
+  pages        = {28-41},
+  volume       = {14},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
